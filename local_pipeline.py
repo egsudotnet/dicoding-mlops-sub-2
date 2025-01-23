@@ -8,12 +8,12 @@ from absl import logging
 from tfx.orchestration import metadata, pipeline
 from tfx.orchestration.beam.beam_dag_runner import BeamDagRunner
  
-PIPELINE_NAME = "customer-churn-pipeline"
+PIPELINE_NAME = "patient-stress-pipeline"
  
 # pipeline inputs
 DATA_ROOT = "data"
-TRANSFORM_MODULE_FILE = "modules/customer_churn_transform.py"
-TRAINER_MODULE_FILE = "modules/customer_churn_trainer.py"
+TRANSFORM_MODULE_FILE = "modules/patient_stress_transform.py"
+TRAINER_MODULE_FILE = "modules/patient_stress_trainer.py"
 # requirement_file = os.path.join(root, "requirements.txt")
  
 # pipeline outputs
@@ -69,3 +69,7 @@ if __name__ == "__main__":
 
 # Untuk menjalankan berkas local_pipeline.py, tulislah perintah berikut pada terminal atau windows PowerShell
 # python .\local_pipeline.py 
+
+#.\mlops-tfx-dev-ops\Scripts\activate
+# where python
+# "E:\ProgramData\anaconda3\envs\mlops-tfx-dev-ops\python.exe" local_pipeline.py

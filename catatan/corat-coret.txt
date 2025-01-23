@@ -1,0 +1,13 @@
+conda create --name mlops-tfx-dev-ops python==3.10.16
+conda activate mlops-tfx-dev-ops
+ 
+uv pip install jupyter scikit-learn tensorflow tfx flask joblib
+nanti masih ada error karena setuptoolsnya jadi saya turunin ke versi 70
+uv pip install setuptools==70
+
+
+Menentukan Interpreter Python di VS Code (Opsional)
+Jika kamu menggunakan VS Code, kamu bisa memilih environment di sana:
+
+Tekan Ctrl+Shift+P → Cari "Python: Select Interpreter."
+Pilih environment yang ingin digunakan.
