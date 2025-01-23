@@ -11,3 +11,17 @@ Jika kamu menggunakan VS Code, kamu bisa memilih environment di sana:
 
 Tekan Ctrl+Shift+P → Cari "Python: Select Interpreter."
 Pilih environment yang ingin digunakan.
+
+pip install --upgrade tfx ml-metadata
+
+
+--==================
+conda deactivate
+conda env remove --name mlops-tfx-dev-ops
+conda clean --all
+conda create -n mlops-tfx-dev-ops python=3.10.16
+conda activate mlops-tfx-dev-ops
+uv pip install jupyter scikit-learn tensorflow tfx==1.11.0 flask joblib
+pip install --upgrade ml-metadata
+
+
